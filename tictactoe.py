@@ -2,12 +2,21 @@ print('Welcome to Tic Tac Toe!')
 
 #1
 def display_board(board):
-    print('\n'*5)
-    print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print('\n'*3)
+    line1 = ' [7] ' + ' | [8] ' + ' | [9] '
+    line2 = ' [4] ' + ' | [5] ' + ' | [6] '
+    line3 = ' [1] ' + ' | [2] ' + ' | [3] '
+    print(line1.replace('[7]',board[7]).replace('[8]',board[8]).replace('[9]',board[9]))
     print('---|---|---')
-    print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+    print(line2.replace('[4]',board[4]).replace('[5]',board[5]).replace('[6]',board[6]))
     print('---|---|---')
-    print('  ' + board[1] + '  |  ' + board[2] + ' | ' + board[3])
+    print(line3.replace('[1]',board[1]).replace('[2]',board[2]).replace('[3]',board[3]))
+    
+    #print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+    #print('---|---|---')
+    #print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+    #print('---|---|---')
+    #print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
 
 #2
 player1 = ''
